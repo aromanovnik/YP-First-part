@@ -1,0 +1,57 @@
+{
+  "name": "yp-first-part",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/pages/home/home.hbs --no-cache",
+    "build": "parcel build src/pages/home/home.hbs --no-cache --public-url ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "pre-commit": "npm run prettier && npm run lint"
+  },
+  "pre-commit": [
+    "prettier",
+    "lint"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aromanovnik/YP-First-part.git"
+  },
+  "author": "Aleksey Romanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aromanovnik/YP-First-part/issues"
+  },
+  "homepage": "https://github.com/aromanovnik/YP-First-part#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "node-sass": "^8.0.0",
+    "parcel": "^2.8.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.8.0",
+    "typescript": "^4.6.2"
+  }
+}
