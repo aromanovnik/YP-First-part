@@ -1,20 +1,5 @@
 {{!< base}}
 
-<div class="auth">
-    <h1 class="auth__title">Вход</h1>
-
-    <form action="#" class="auth__form form">
-        <div class="form__input">
-            <label for="login">Логин</label>
-            <input id="login" type="text" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="password">Пароль</label>
-            <input id="password" type="password" placeholder="">
-        </div>
-
-        <button class="button">Авторизоваться</button>
-        <a href="../registration/registration.hbs">Нет аккаунта?</a>
-    </form>
+<div class="auth-page page">
+    {{> 'login-form/login-form' }}
 </div>

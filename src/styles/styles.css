@@ -1,6 +1,11 @@
 @import "./base.css";
+
+/*Errors*/
 @import "../pages/not-found/not-found.css";
+
+/*Auth*/
 @import "../pages/auth/auth.css";
+@import "../pages/registration/registration.css";
 
 body {
     /*font-family: 'Inter';*/
@@ -14,6 +19,13 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: auto;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
 }
 
 a {

@@ -1,46 +1,5 @@
 {{!< base}}
 
-<div class="auth">
-    <h1 class="auth__title">Регистрация!</h1>
-
-    <form action="#" class="auth__form form">
-        <div class="form__input">
-            <label for="email">Почта</label>
-            <input id="email" type="email" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="login">Логин</label>
-            <input id="login" type="text" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="firstname">Имя</label>
-            <input id="firstname" type="text" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="lastname">Фамилия</label>
-            <input id="lastname" type="text" placeholder="">
-        </div>
-
-
-        <div class="form__input">
-            <label for="tel">Телефон</label>
-            <input id="tel" type="tel" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="password">Пароль</label>
-            <input id="password" type="password" placeholder="">
-        </div>
-
-        <div class="form__input">
-            <label for="passwordConf">Пароль (ещё раз)</label>
-            <input id="passwordConf" type="password" placeholder="">
-        </div>
-
-        <button class="button">Зарегистрироваться</button>
-        <a href="../auth/auth.hbs">Войти</a>
-    </form>
+<div class="registration-page page">
+  {{> 'registration-form/registration-form' }}
 </div>
