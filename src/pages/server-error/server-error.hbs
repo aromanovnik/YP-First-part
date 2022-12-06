@@ -1,7 +1,10 @@
 {{!< base}}
 
-<div class="error-page">
-    <h1 class="error-page__title">500</h1>
-    <p class="error-page__desc">Мы уже фиксим</p>
-    <a class="error-page__link" href="/">Назад к чатам</a>
+<div class="server-error-page page">
+    {{> 'error/error'
+            title="500"
+            subtitle="Мы уже фиксим"
+            actionHref="/"
+            actionText="Назад к чатам"
+    }}
 </div>
