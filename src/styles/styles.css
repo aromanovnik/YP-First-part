@@ -42,6 +42,11 @@ a {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
 a:hover {
     text-decoration: underline;
 }
