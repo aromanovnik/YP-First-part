@@ -3,9 +3,9 @@
     {{> 'user-avatar/user-avatar' image=null }}
   </div>
   <div class='chat-item__content'>
-    <div class='chat-item__content-title'>{{title}}</div>
+    <div class='chat-item__title'>{{title}}</div>
 
-    <div class='chat-item__content-text'>
+    <div class='chat-item__text'>
       {{#if isYoy}}
         <strong>Вы:</strong>
       {{/if}}
@@ -13,6 +13,12 @@
     </div>
   </div>
   <div class='chat-item__sidebar'>
+    {{#if dateLast}}
+      <span class='chat-item__date'>{{dateLast}}</span>
+    {{/if}}
 
+    {{#if badge}}
+      <span class='chat-item__badge' title='{{badge}}'>{{badge}}</span>
+    {{/if}}
   </div>
 </div>
