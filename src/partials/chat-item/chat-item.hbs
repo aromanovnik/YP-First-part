@@ -1,3 +1,18 @@
 <div class="chat-item">
+  <div class='chat-item__avatar'>
+    {{> 'user-avatar/user-avatar' image=null }}
+  </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__content-title'>{{title}}</div>
 
+    <div class='chat-item__content-text'>
+      {{#if isYoy}}
+        <strong>Вы:</strong>
+      {{/if}}
+      {{text}}
+    </div>
+  </div>
+  <div class='chat-item__sidebar'>
+
+  </div>
 </div>

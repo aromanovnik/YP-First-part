@@ -1,3 +1,16 @@
+@import "../chat-item/chat-item.css";
+
 .chat-list {
-    
+    display: flex;
+    height: 100%;
+    max-width: 100vw;
+    width: 310px;
+    background-color: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+}
+
+.chat-list .chat-list__list {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
