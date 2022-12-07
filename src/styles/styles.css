@@ -1,15 +1,17 @@
 @import "./base.css";
+/*Pages*/
+/*...*/
 
-/*Errors*/
-@import "../pages/not-found/not-found.css";
-@import "../pages/server-error/server-error.css";
+/*Partials*/
+@import "../partials/login-form/login-form.css";
+@import "../partials/registration-form/registration-form.css";
 
-/*Auth*/
-@import "../pages/auth/auth.css";
-@import "../pages/registration/registration.css";
+@import "../partials/chat-box/chat-box.css";
+@import "../partials/chat-list/chat-list.css";
+@import "../partials/chat-details/chat-details.css";
+@import "../partials/chat-item/chat-item.css";
 
-/*Chat*/
-@import "../pages/home/home.css";
+@import "../partials/user-avatar/user-avatar.css";
 
 body {
     /*font-family: 'Inter';*/
@@ -37,6 +39,7 @@ a {
     font-size: 11px;
     line-height: 11px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {

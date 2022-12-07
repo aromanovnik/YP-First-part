@@ -1,11 +1,9 @@
-@import "../chat-list/chat-list.css";
-@import "../chat-details/chat-details.css";
-
-/*Avatar*/
-@import "../user-avatar/user-avatar.css";
-
 .chat-box {
     display: flex;
     height: 100%;
     width: 100%;
+}
+
+.chat-box .chat-box__chat-details {
+    flex: 1;
 }
