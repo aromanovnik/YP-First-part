@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/aromanovnik/YP-First-part/issues"
   },
+  "engines": {
+    "node": "16.13.0"
+  },
   "homepage": "https://github.com/aromanovnik/YP-First-part#readme",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",

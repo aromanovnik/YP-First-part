@@ -1,0 +1,14 @@
+.user-details-page {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.user-details-page .user-details-page__sidebar {
+    height: 100%;
+}
+
+.user-details-page .user-details-page__main {
+    height: 100%;
+    width: 100%;
+}

@@ -1,6 +1,7 @@
 @import "./base.css";
+
 /*Pages*/
-/*...*/
+@import "../pages/user-details/user-details.css";
 
 /*Partials*/
 @import "../partials/login-form/login-form.css";
@@ -13,9 +14,9 @@
 @import "../partials/chat-message/chat-message.css";
 
 @import "../partials/user-avatar/user-avatar.css";
+@import "../partials/sidebar-back/sidebar-back.css";
 
 body {
-    /*font-family: 'Inter';*/
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
