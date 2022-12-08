@@ -3,15 +3,18 @@
     flex-direction: row;
     padding: 10px;
     margin-top: 5px;
-    /*margin-bottom: 2px;*/
     width: 100%;
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
 }
 
 .chat-item:hover {
     background-color: #E4EDFD;
+    text-decoration: none;
 }
 
 .chat-item:before {
@@ -38,6 +41,8 @@
 
 .chat-item .chat-item__title {
     font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
     color: #1E1E1E;
     margin-bottom: 4px;
 }

@@ -1,0 +1,10 @@
+<div class='chat-message {{#if isMyMessage}}chat-message_my-message{{/if}} {{#if isBig}}chat-message_big{{/if}}'>
+
+  <p class='chat-message__text'>{{text}}</p>
+
+  {{#if dateMessage}}
+    <span class='chat-message__date'>
+      {{dateMessage}}
+    </span>
+  {{/if}}
+</div>
