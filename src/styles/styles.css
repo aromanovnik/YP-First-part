@@ -15,6 +15,7 @@
 
 @import "../partials/user-avatar/user-avatar.css";
 @import "../partials/sidebar-back/sidebar-back.css";
+@import "../partials/user-info/user-info.css";
 
 body {
     font-style: normal;
