@@ -2,9 +2,12 @@
 
   <p class='chat-message__text'>{{text}}</p>
 
-  {{#if dateMessage}}
-    <span class='chat-message__date'>
-      {{dateMessage}}
-    </span>
-  {{/if}}
+
+  <span class='chat-message__date'>
+    {{#if isMyMessage}}
+      <img src='../../../assets/images/check-mark.svg' alt='Check mark'>
+    {{/if}}
+
+    {{dateMessage}}
+  </span>
 </div>
