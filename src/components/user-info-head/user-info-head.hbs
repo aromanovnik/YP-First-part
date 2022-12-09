@@ -4,9 +4,13 @@
       <img src='{{image}}' alt='Avatar'>
     {{/if}}
 
-    <button class='user-info-head__change-avatar'>
-      Поменять аватар
-    </button>
+    <div class='user-info-head__change-avatar'>
+      <form>
+        <span>Поменять аватар</span>
+        <input type='file' name='avatar'>
+      </form>
+
+    </div>
   </div>
 
   {{#if isShowName}}

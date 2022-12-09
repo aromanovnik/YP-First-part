@@ -17,6 +17,7 @@
 @import "../components/user-info-head/user-info-head.css";
 @import "../components/user-info/user-info.css";
 @import "../components/user-edit/user-edit.css";
+@import "../components/user-change-pass/user-change-pass.css";
 
 body {
     font-style: normal;
@@ -144,7 +145,8 @@ a:hover {
 .user-page .user-page__list ul li input {
     color: #999999;
     padding: 0;
-    margin: 0;
+    height: 25px;
+    margin: -5px 0 -5px;
     width: 50%;
     border: 0;
     text-align: right;
