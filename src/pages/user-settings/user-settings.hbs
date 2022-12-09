@@ -1,5 +1,11 @@
-{{!< base}}
+{{!< base/base}}
 
-<main>
-  <h1>User settings!</h1>
-</main>
+<div class='user-details user-page page'>
+  <div class='user-page__sidebar'>
+    {{> 'sidebar-back/sidebar-back' }}
+  </div>
+
+  <div class='user-page__main'>
+    {{> 'user-edit/user-edit' }}
+  </div>
+</div>

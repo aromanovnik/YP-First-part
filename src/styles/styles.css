@@ -1,21 +1,22 @@
 @import "./base.css";
 
-/*Pages*/
-@import "../pages/user-details/user-details.css";
-
 /*Partials*/
-@import "../partials/login-form/login-form.css";
-@import "../partials/registration-form/registration-form.css";
+@import "../components/login-form/login-form.css";
+@import "../components/registration-form/registration-form.css";
 
-@import "../partials/chat-box/chat-box.css";
-@import "../partials/chat-list/chat-list.css";
-@import "../partials/chat-details/chat-details.css";
-@import "../partials/chat-item/chat-item.css";
-@import "../partials/chat-message/chat-message.css";
+@import "../components/error/error.css";
 
-@import "../partials/user-avatar/user-avatar.css";
-@import "../partials/sidebar-back/sidebar-back.css";
-@import "../partials/user-info/user-info.css";
+@import "../components/chat-box/chat-box.css";
+@import "../components/chat-list/chat-list.css";
+@import "../components/chat-details/chat-details.css";
+@import "../components/chat-item/chat-item.css";
+@import "../components/chat-message/chat-message.css";
+
+@import "../components/user-avatar/user-avatar.css";
+@import "../components/sidebar-back/sidebar-back.css";
+@import "../components/user-info-head/user-info-head.css";
+@import "../components/user-info/user-info.css";
+@import "../components/user-edit/user-edit.css";
 
 body {
     font-style: normal;
@@ -54,6 +55,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/*Forms*/
 .form {
     display: flex;
     flex-direction: column;
@@ -80,7 +82,7 @@ a:hover {
     outline: 0;
 }
 
-.form .button {
+.button {
     cursor: pointer;
     background: #3369F3;
     border-radius: 8px;
@@ -89,4 +91,65 @@ a:hover {
     border: 0;
     outline: 0;
     padding: 12px;
+    width: 280px;
+    max-width: 100%;
+}
+
+/*User*/
+.user-page {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.user-page .user-page__sidebar {
+    height: 100%;
+}
+
+.user-page .user-page__main {
+    height: 100%;
+    width: 100%;
+}
+
+
+.user-page .user-page__list {
+    width: 100%;
+}
+
+.user-page .user-page__list ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+.user-page .user-page__list ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.user-page .user-page__list a {
+    font-size: 13px;
+}
+
+.user-page .user-page__list ul li:last-child {
+    border-bottom: 0;
+}
+
+.user-page .user-page__list ul li span:last-child {
+    color: #999999;
+}
+
+.user-page .user-page__list ul li input {
+    color: #999999;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    border: 0;
+    text-align: right;
+}
+
+.user-page .user-page__exit-link {
+    color: #FF0000;
 }

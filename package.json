@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "npm run clear && parcel src/pages/index.hbs --no-cache",
+    "dev": "npm run clear && parcel src/pages/index.hbs --no-cache --open",
     "start": "npm run clear && parcel build src/pages/index.hbs && node ./server.js",
     "clear": "rimraf dist"
   },

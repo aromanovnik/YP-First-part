@@ -57,7 +57,7 @@
 .chat-list .chat-list__search input::placeholder {
     color: #999999;
     text-align: center;
-    background-image: url("../../assets/images/union.svg");
+    background-image: url("../../static/images/union.svg");
     background-repeat: no-repeat;
     background-position: 35% 0;
 }
